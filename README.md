@@ -59,11 +59,23 @@ resume.pdf
 
 ## Project files
 
-| File | Description |
-|------|-------------|
-| `resume.tex` | Main LaTeX source — edit this file |
-| `resume.pdf` | Generated resume (share/submit this) |
-| `resume.aux`, `resume.log`, `resume.out` | Build artifacts (safe to delete; regenerated on compile) |
+| File / folder | Description |
+|---------------|-------------|
+| `resume.tex` | Main LaTeX source (AI Developer focus) |
+| `resume.pdf` | Generated AI-focused resume |
+| `resume2.tex` | Alternate trimmed AI resume |
+| `Instructor/` | Cybersecurity Mentor / Instructor CV |
+| `Instructor/resume-cyber.tex` | Instructor-focused LaTeX source |
+| `Instructor/resume-cyber.pdf` | Generated instructor CV |
+| `*.aux`, `*.log`, `*.out` | Build artifacts (safe to delete; regenerated on compile) |
+
+### Compile the Instructor CV
+
+```powershell
+cd e:\AstroLinx\t-resume\Instructor
+
+& "$env:LOCALAPPDATA\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe" -interaction=nonstopmode resume-cyber.tex
+```
 
 ## Editing tips
 

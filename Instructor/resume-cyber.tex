@@ -1,0 +1,153 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill \textit{#2} \\
+  \textit{#3} \hfill \textit{#4} \\
+}
+
+\newcommand{\resumeItemList}{\begin{itemize}[leftmargin=*, nosep, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE \textbf{Muhammad Talha Zaheer}} \\[6pt]
+  \href{mailto:zaheertalha123@gmail.com}{zaheertalha123@gmail.com} \;|\;
+  +92 318 7768296 \;|\;
+  \href{https://www.linkedin.com/in/zaheertalha123}{linkedin.com/in/zaheertalha123} \;|\;
+  \href{https://github.com/zaheertalha123}{github.com/zaheertalha123} \;|\;
+  \href{https://talhazaheer.dev}{talhazaheer.dev}
+\end{center}
+
+\vspace{4pt}
+
+% ---------- Summary ----------
+\section{Professional Summary}
+Cybersecurity professional and technical educator passionate about mentoring the next generation of security practitioners. Experienced in penetration testing, defensive security, digital forensics, and hands-on lab instruction---from building isolated Kali environments to teaching OWASP Top 10 exploitation and remediation. Designed and delivered multi-module video curricula for Skill Bridge Pakistan and Hunarmand Punjab, and foster local talent as Hack The Box Meetup Ambassador and Cybersecurity Mentor at UMT. Grounded in a BS in Computer Science plus diplomas in Cyber Security and Digital Forensics, with a teaching approach built on \textit{think like an attacker, defend like a professional}.
+
+% ---------- Skills ----------
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.75in} X@{}}
+  Security Domains &
+  Penetration Testing, Incident Response, OWASP Top 10, OSINT, Digital Forensics, Network Security, Vulnerability Assessment \\
+  Offensive \& Defensive Tools &
+  Kali Linux, Metasploit Framework, Nmap, Burp Suite, SQLmap, WPScan, Hashcat, Wireshark, Ghidra, Autopsy, Maltego, Nessus, Network Miner, DVWA, pfSense, WAF, VirtualBox, Netcat \\
+  Languages &
+  C++, Python, Bash, SQL, JavaScript \\
+  Instruction \& Leadership &
+  Curriculum Design, Workshop Delivery, CTF Organization, Team Leadership, Mentorship \\
+\end{tabularx}
+
+% ---------- Experience ----------
+\section{Professional Experience}
+
+\resumeSubheading{Hack The Box}{Apr 2025 -- Present}{Meetup Host \& Ambassador}{Lahore, Pakistan}
+\resumeItemList
+  \item Hosted on-campus and online cybersecurity meetups at NIIT, FAST Lahore, UMT Lahore, Superior University, ShellShift, and virtual sessions, teaching security fundamentals through workshops and hands-on labs.
+  \item Mentor aspiring professionals on career paths, certifications, and practical skill development; provide HTB resources and curated learning support.
+  \item Expand community outreach as Lahore Ambassador (Jan 2026--Present), fostering collaborative peer learning environments.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Skill Bridge Pakistan}{Dec 2025 -- May 2026}{Cyber Security Course Instructor}{Lahore, Pakistan}
+\resumeItemList
+  \item Designed and recorded a 24-lecture hands-on curriculum teaching attack-to-defend methodology from foundational labs to industry reporting.
+  \item Taught isolated lab setup (VirtualBox/Kali), Wireshark traffic analysis, Nmap reconnaissance, Burp Suite web testing (DVWA), and EternalBlue (MS17-010) exploitation.
+  \item Covered OSINT, Google Dorking, WAF remediation, digital forensics basics, and vulnerability reports with executive summaries and remediation steps.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Hunarmand Punjab}{Jul 2025 -- Oct 2025}{Cyber Security Course Instructor}{Punjab, Pakistan}
+\resumeItemList
+  \item Designed two full courses---Cybersecurity and Penetration Testing---including complete outlines, module sequencing, and learning objectives.
+  \item Recorded 24 video lectures for each course (48 total), delivering practical, hands-on instruction for a government skills initiative.
+  \item Created quizzes, assignments, final projects, and exams to assess student progress and applied security competency.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Cyber Security Society -- UMT}{Feb 2025 -- Jul 2025}{Cybersecurity Mentor}{Lahore, Pakistan}
+\resumeItemList
+  \item Led weekly workshops on network security, threat modeling, and defensive security practices.
+  \item Ran hands-on labs with Nmap, Wireshark, and Burp Suite to connect theory to real-world scenarios.
+  \item Mentored students and grew an active campus security community focused on careers in information security.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Professional Freelancing Training Program}{Nov 2024 -- Apr 2025}{Cybersecurity Intern}{Lahore, Pakistan}
+\resumeItemList
+  \item Tested web apps for SQL injection, file inclusion, and unrestricted upload vulnerabilities.
+  \item Used Nmap, Burp Suite, and Wireshark for reconnaissance and traffic analysis; lab-tested EternalBlue, macro exploits, and emerging CVEs.
+  \item Configured WAF and pfSense firewalls; performed digital forensics on hard drives and disk images.
+\resumeItemListEnd
+
+% ---------- Projects ----------
+\section{Relevant Projects}
+
+\textbf{CTF Platform} \hfill \textit{Web Application} \\
+Web platform for hosting and managing Capture The Flag cybersecurity competitions; organized CTF events at PFTP and led Cyber Siege team competitions.
+
+\vspace{4pt}
+
+\textbf{File Sync System} \hfill \textit{C++ Application} \\
+C++ file synchronization utility for reliable local file management and structured data transfer.
+
+\vspace{4pt}
+
+\textbf{POS System} \hfill \textit{Professional Work} \\
+Electron.js point-of-sale system for restaurants with order management, multi-printer support, and production deployment.
+
+\vspace{4pt}
+
+\textbf{Voice Agent} \hfill \textit{AI Agent} \\
+Built production voice agents with Pipecat AI, Deepgram STT, OpenAI, and Cartesia TTS; implemented tool calling for transfers, voicemail detection, and API integrations.
+
+\vspace{2pt}
+
+{\small Portfolio: \href{https://talhazaheer.dev/\#projects}{talhazaheer.dev/\#projects}}
+
+% ---------- Achievements ----------
+\section{Achievements}
+\begin{itemize}[leftmargin=*, nosep]
+  \item \textbf{Digital Pakistan Cybersecurity Hackathon} --- Regional Round Participant (Red Teaming); Finalist (Blue Teaming)
+  \item \textbf{PFTP / Cyber Siege} --- Organized Capture The Flag competitions; led team to conduct campus CTF events
+  \item \textbf{UMT} --- Peer Tutor supporting cybersecurity and computer science coursework
+\end{itemize}
+
+% ---------- Education ----------
+\section{Education}
+
+\resumeSubheading{University of Management and Technology (UMT)}{Nov 2019 -- Aug 2025}{Bachelor of Science, Computer Science}{Lahore, Pakistan}
+
+\vspace{4pt}
+
+\resumeSubheading{Professional Freelancing Training Program (NIAIS)}{Jun 2024 -- May 2025}{Diploma, Cyber Security}{Lahore, Pakistan}
+
+\vspace{4pt}
+
+\resumeSubheading{NAVTTC}{Apr 2025 -- Jul 2025}{Certification, Digital Forensic \& Cyber Security}{Pakistan}
+
+\end{document}
