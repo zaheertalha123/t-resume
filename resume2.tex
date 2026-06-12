@@ -90,30 +90,107 @@ Computer scientist specializing in Agentic AI and secure software architecture. 
 \resumeItemListEnd
 
 % ---------- Projects ----------
-\section{Relevant Projects}
+\section{Projects}
 
-\textbf{Voice Agent} \hfill \textit{AI Agent} \\
-Built production voice agents with Pipecat AI, Deepgram STT, OpenAI, and Cartesia TTS; implemented tool calling for transfers, voicemail detection, and API integrations.
-
-\vspace{4pt}
-
-\textbf{POS System} \hfill \textit{Professional Work} \\
-Electron.js point-of-sale system for restaurants with order management, multi-printer support, and production deployment.
-
-\vspace{4pt}
-
-\textbf{Waiter App} \hfill \textit{Professional Work} \\
-Staff-facing application for taking and syncing restaurant orders with the POS backend across service workflows.
+\textbf{Vello (Voice Agent)} \hfill \textit{AI Agent} \\
+\textit{Tech Stack:} Pipecat AI, Deepgram STT, OpenAI LLM, Cartesia TTS, Daily PSTN, Supabase, React
+\resumeItemList
+  \item Built a Pipecat AI voice bot for inbound and outbound calls via Daily PSTN, with voicemail detection, call transfer, and professional sales-agent conversations.
+  \item Integrated Deepgram STT, OpenAI LLM, and Cartesia TTS; supports separate dynamic system prompts for inbound and outbound agents loaded from Supabase at call time.
+  \item Tracks token consumption for per-call pricing; stores recordings and transcriptions in Supabase with a React dashboard for org setup, member invites, recordings, and cost analytics.
+\resumeItemListEnd
 
 \vspace{4pt}
 
-\textbf{CTF Platform} \hfill \textit{Web Application} \\
-Web platform for hosting and managing Capture The Flag cybersecurity competitions with practical challenge workflows.
+\textbf{Pacifica Bot (Customer Support Agent)} \hfill \textit{Voice Agent} \\
+\textit{Tech Stack:} Pipecat AI, Deepgram STT, OpenAI LLM, Cartesia TTS, Daily PSTN, FastAPI, Supabase, React, GitHub Actions, Railway
+\resumeItemList
+  \item Built an inbound Pipecat AI voice agent via Daily PSTN for logistics customer support, with a comprehensive system prompt covering general guidelines and TMS domain knowledge to resolve queries efficiently, including generic inquiries.
+  \item Implemented agent tools as FastAPI endpoints that query the Trinium database with optimized joins for fast real-time lookups; supports ending calls, transferring calls, and sending emails during live conversations.
+  \item Tracks per-call cost across LLM, TTS, STT, and telephony usage; stores call recordings and transcripts in Supabase for later analysis and review.
+  \item Designed GitHub Actions workflows to deploy on Railway with separate pipelines for production, staging, and per-PR preview environments.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{Zuum (Truck Dispatch Agent)} \hfill \textit{Voice Agent} \\
+\textit{Tech Stack:} Retell AI, Twilio, FastAPI, React, Supabase, WebSockets
+\resumeItemList
+  \item Built a truck dispatch voice agent using Retell AI and Twilio to outbound-call drivers for load status updates, delivery confirmation, hurdle reporting, and POD collection.
+  \item Implemented Retell single-prompt agents with custom functions to fetch dispatch data from a FastAPI backend; used post-call analysis and webhook events to track live and completed calls.
+  \item Stored call data, analysis, and transcriptions in Supabase; React frontend displays dispatch activity with real-time updates via WebSockets.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{Automated SDR (Outbound Calling Agent)} \hfill \textit{Voice Agent} \\
+\textit{Tech Stack:} Pipecat AI, Deepgram STT, OpenAI LLM, Cartesia TTS, Daily PSTN, Supabase, React, GitHub Actions, Railway
+\resumeItemList
+  \item Built an outbound Pipecat AI voice agent for sales development, placing automated calls for prospecting, lead qualification, and follow-up at scale via Daily PSTN.
+  \item Integrated Deepgram STT, OpenAI LLM, and Cartesia TTS with dynamic SDR prompts loaded from Supabase; includes voicemail detection and professional sales conversation flows.
+  \item Tracks token usage for per-call cost analysis; stores recordings and transcriptions in Supabase with a React dashboard for campaign monitoring and call review.
+  \item Designed GitHub Actions workflows to deploy on Railway with separate pipelines for production, staging, and per-PR preview environments.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{Agentic Portfolio} \hfill \textit{AI Web App} \\
+\textit{Tech Stack:} Next.js, Vercel AI SDK, OpenAI, Vercel
+\resumeItemList
+  \item Built a Next.js portfolio app powered by the Vercel AI SDK and OpenAI, using a user-supplied JSON CV as dynamic context for the chatbot.
+  \item UI adapts automatically from the uploaded JSON profile; the agent answers role-fit and project-related queries from that resume data.
+  \item Designed for easy deployment on Vercel with minimal setup---users only need to provide their CV JSON to launch a personalized agentic portfolio.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{DrayDog -- Puppeteer Automations} \hfill \textit{Automation Platform} \\
+\textit{Tech Stack:} Node.js, Express, Puppeteer, OpenAI
+\resumeItemList
+  \item Built a Node.js automation platform that fetches container data from DrayDog and runs concurrent Puppeteer workflows for logistics operations.
+  \item Automated marking containers as picked up, updating leg movement status, adding driver notes, and flagging empty containers as available for pickup.
+  \item Collected and stored DrayDog and Trinium data for cross-system comparison; used OpenAI to analyze empty-container emails.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{AstroPOS} \hfill \textit{Restaurant Management System} \\
+\textit{Tech Stack:} Electron, Vite, React, Supabase
+\resumeItemList
+  \item Built a complete restaurant management system with PIN login, multi-kitchen setup, menu items, deals, custom shift tracking, and per-item sales reporting.
+  \item Supports multiple payment accounts, on-account customer billing, auto-saved customer details, delivery charges, and discounts via a full admin panel.
+  \item Works offline and online with interval-based sync; routes orders to multiple printers with separate customer and kitchen receipts; includes an on-screen keyboard and auto-update support.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{Chotu Cafe Mobile} \hfill \textit{Mobile App} \\
+\textit{Tech Stack:} Expo, React Native, Supabase
+\resumeItemList
+  \item Built a waiter-facing mobile app in Expo with Supabase for managing table orders across restaurant service workflows.
+  \item Uses Supabase Realtime to push live order updates as changes are made or new orders are placed.
+  \item Sends remote print instructions via a print server to route receipts to kitchens and customers when needed.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{Astro CTF} \hfill \textit{CTF Platform} \\
+\textit{Tech Stack:} Django, PostgreSQL, Docker, Jinja2
+\resumeItemList
+  \item Built a complete CTF platform in Django with modular apps, PostgreSQL backend, and event lifecycle management (start/end scheduling).
+  \item Supports tasks with encrypted flags, files, links, hints, and Docker-based challenges added via a guided admin UI.
+  \item Tracks team and per-task performance metrics; uses Jinja2 templating to render structured frontend views from large datasets.
+\resumeItemListEnd
 
 \vspace{4pt}
 
 \textbf{File Sync System} \hfill \textit{C++ Application} \\
-C++ file synchronization utility for reliable local file management and structured data transfer.
+\textit{Tech Stack:} C++, WinSock, AVL Tree
+\resumeItemList
+  \item Built separate C++ client and server applications on Windows using WinSock for networked file management.
+  \item Server spawns a dedicated thread per client connection and uses an in-memory AVL tree to index millions of files for fast lookup.
+  \item Client supports account login and Linux-style commands to list, create, delete, and modify files on the remote server.
+\resumeItemListEnd
 
 \vspace{2pt}
 
@@ -134,7 +211,13 @@ C++ file synchronization utility for reliable local file management and structur
 
 % ---------- Additional Experience ----------
 \section{Additional Experience}
+
+\resumeSubheading{Skill Bridge Pakistan}{Dec 2025 -- May 2026}{Agentic AI Course Instructor}{Lahore, Pakistan} \\
+Recorded 24 video lectures on LLMs, prompt engineering, and the Vercel AI SDK (streaming, tool calling, agents); guided students to build and deploy an agentic portfolio chatbot with Next.js on Vercel; taught local LLM development with LM Studio.
+
+\vspace{4pt}
+
 \resumeSubheading{Hunarmand Punjab}{Sep 2025 -- Oct 2025}{Course Instructor}{Punjab, Pakistan} \\
-Delivered structured technical training as part of a government skills development initiative.
+Delivered structured technical training for a government skills initiative; designed and recorded two courses (Cybersecurity and Penetration Testing, 48 lectures) with quizzes, assignments, and exams.
 
 \end{document}
