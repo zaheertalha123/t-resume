@@ -47,46 +47,60 @@
 
 % ---------- Summary ----------
 \section{Professional Summary}
-Computer scientist specializing in Agentic AI and secure software architecture. Experienced in building autonomous AI solutions with Next.js, Node.js, and the Vercel AI SDK---including tool calling, streaming generation, and production deployment. Combines full-stack development with a defensive security mindset shaped by hands-on cybersecurity training and instruction. Passionate about technical education, community leadership, and designing intelligent systems that are both innovative and secure.
+AI Developer specializing in production agentic systems and real-time voice AI. Builds and ships LLM-powered agents with tool calling, prompt engineering, and speech pipelines (STT/LLM/TTS) over PSTN---including inbound support, outbound SDR, and logistics dispatch agents. Strong full-stack delivery with Python, FastAPI, Next.js, React, and Supabase: agent tools, cost tracking, call analytics, and CI/CD for production, staging, and preview environments. Experienced across Pipecat AI, Retell, OpenAI, Vercel AI SDK, Deepgram, Cartesia, and Daily PSTN; also teaches Agentic AI and applies a security-aware engineering mindset from hands-on cybersecurity training.
 
 % ---------- Skills ----------
-\section{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.6in} X@{}}
-  Languages &
-  Python, JavaScript, TypeScript, Bash, SQL \\
-  Frameworks &
-  Next.js, React, Node.js \\
-  AI \& ML &
-  Agentic AI, LLMs, Vercel AI SDK, Tool Calling, Pipecat AI, Deepgram, Cartesia, Daily PSTN, Prompt Optimization, LM Studio \\
+\section{Core Competencies}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.75in} X@{}}
+  AI \& Agent Engineering &
+  Agentic AI, LLMs, Tool Calling, Prompt Engineering, System Prompts, Streaming Generation, Voice Agents, Speech Pipelines (STT/LLM/TTS), Cost \& Token Tracking, Local LLMs (LM Studio) \\
+  AI Frameworks \& APIs &
+  Pipecat AI, OpenAI, Vercel AI SDK, Retell AI, Deepgram, Cartesia, Daily PSTN, Twilio \\
+  Languages \& Backend &
+  Python, TypeScript, JavaScript, SQL, Bash, FastAPI, Node.js, Express, Django \\
+  Frontend \& Data &
+  Next.js, React, React Native (Expo), Electron, Supabase, WebSockets, PostgreSQL \\
   DevOps \& Deployment &
-  Git/GitHub, GitHub Actions, Docker, CI/CD, Vercel, Railway, Digital Ocean, Supabase \\
-  Tools \& IDEs &
-  Postman, Cursor, VS Code, Google Antigravity, VirtualBox \\
-  Project Management &
-  Monday.com, Linear \\
+  GitHub Actions, CI/CD, Docker, Railway, Vercel, Digital Ocean, Git/GitHub \\
+  Tools &
+  Postman, Cursor, VS Code, Puppeteer, Linear, Monday.com \\
 \end{tabularx}
 
 % ---------- Experience ----------
 \section{Professional Experience}
 
-\resumeSubheading{Core Edge Solutions}{May 2025 -- May 2026}{AI Developer}{Lahore, Pakistan}
+\resumeSubheading{EPGGB Law}{Apr 2026 -- Jun 2026}{Developer (Contract)}{Los Angeles, CA (Remote)}
 \resumeItemList
-  \item Built production voice agents using Retell and Pipecat AI, integrating Deepgram (STT), OpenAI (LLM), and Cartesia (TTS) for cost-efficient conversational calling.
-  \item Implemented tool calling for call transfer, call end, voicemail detection, and external API integration; optimized Pacifica Bot prompts after learning TMS domain workflows.
-  \item Developed \textit{Zuum} (FastAPI + React), an internal platform that outbound-calls dispatch drivers for shipment status updates.
-  \item Designed GitHub Actions CI/CD pipelines to automate deployments on Railway.
-  \item Built Puppeteer automations for Trinium TMS: adding container notes, updating empty container status, and processing acknowledged containers.
-  \item Wrote SQL queries against Trinium TMS, exposed data through custom APIs, and compiled reports for container tracking.
+  \item Built an Electron.js desktop application integrated with the Clio API to fetch, organize, and export legal practice data for client workflows.
+  \item Retrieved and structured records by matters, activities, issues, and bills; mapped API responses into clean, analysis-ready datasets.
+  \item Generated custom-formatted CSV exports for downstream data processing and reporting.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Core Edge Solutions}{May 2025 -- Apr 2026}{AI Engineer / Technical Delivery}{Lahore, Pakistan}
+\resumeItemList
+  \item Owned end-to-end delivery of production voice-AI products (inbound support, outbound SDR, truck dispatch), coordinating STT/LLM/TTS integrations, backend APIs, and React dashboards from design through release.
+  \item Translated TMS domain requirements into agent prompts, tool specifications, and FastAPI endpoints; aligned engineering work with logistics ops needs (call transfer, email, real-time Trinium lookups).
+  \item Managed release pipelines with GitHub Actions on Railway---production, staging, and per-PR preview environments---reducing deployment friction and enabling safer iteration.
+  \item Tracked delivery quality via per-call cost, recordings, and transcripts for ops review; coordinated Puppeteer/TMS automations that fed live data into agent workflows.
+  \item Used Linear/Monday.com-style task tracking to prioritize features, surface blockers, and keep multi-component agent platforms on schedule.
 \resumeItemListEnd
 
 \vspace{4pt}
 
 \resumeSubheading{Professional Freelancing Training Program}{Nov 2024 -- Apr 2025}{Cybersecurity Intern}{Lahore, Pakistan}
 \resumeItemList
-  \item Conducted web application penetration testing for SQL injection, file inclusion, and unrestricted file upload vulnerabilities.
-  \item Performed network reconnaissance with Nmap and analyzed HTTP/traffic flows using Burp Suite and Wireshark.
-  \item Researched and lab-tested exploits including EternalBlue (MS17-010), macro-based attacks, and GHDB-driven reconnaissance; tracked emerging CVEs for early evaluation.
-  \item Configured WAF rules and pfSense firewalls to protect web applications; practiced digital forensics on hard drives and disk images.
+  \item Supported security-focused project work through structured testing, documentation of findings, and remediation recommendations (web app testing, network analysis, WAF/firewall configuration).
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Freelance}{Sep 2023 -- Nov 2024}{Freelance Developer}{Lahore, Pakistan}
+\resumeItemList
+  \item Delivered freelance software projects for restaurant clients---offline POS systems, waiter mobile apps, and invoice/billing desktop applications built with Node.js and Electron.
+  \item Owned requirements gathering, database design, implementation, and client delivery across hybrid engagements from scoping through deployment.
+  \item Contributed to open projects involving database architecture design and cybersecurity workflow development.
 \resumeItemListEnd
 
 % ---------- Projects ----------
@@ -184,6 +198,15 @@ Computer scientist specializing in Agentic AI and secure software architecture. 
 
 \vspace{4pt}
 
+\textbf{Darzee (Tailor Marketplace) --- Final Year Project} \hfill \textit{Mobile App} \\
+\textit{Tech Stack:} Kotlin, Jetpack Compose, Android Studio, Django REST Framework, PostgreSQL, Bootstrap, Git
+\resumeItemList
+  \item Built a mobile app connecting tailors and customers for custom clothing orders, order progress tracking, nearest-tailor discovery, and service quotes.
+  \item Implemented tailor, customer, and order management with Android (Kotlin, Jetpack Compose) and a Django REST Framework + PostgreSQL backend.
+\resumeItemListEnd
+
+\vspace{4pt}
+
 \textbf{File Sync System} \hfill \textit{C++ Application} \\
 \textit{Tech Stack:} C++, WinSock, AVL Tree
 \resumeItemList
@@ -212,8 +235,13 @@ Computer scientist specializing in Agentic AI and secure software architecture. 
 % ---------- Additional Experience ----------
 \section{Additional Experience}
 
+\resumeSubheading{Hack The Box}{Apr 2025 -- Present}{Meetup Host \& Ambassador}{Lahore, Pakistan} \\
+Hosted on-campus and online cybersecurity meetups at NIIT, UCP, FAST Lahore, UMT Lahore, Superior University, ShellShift, and virtual sessions, teaching security fundamentals through workshops and hands-on labs.
+
+\vspace{4pt}
+
 \resumeSubheading{Skill Bridge Pakistan}{Dec 2025 -- May 2026}{Agentic AI Course Instructor}{Lahore, Pakistan} \\
-Recorded 24 video lectures on LLMs, prompt engineering, and the Vercel AI SDK (streaming, tool calling, agents); guided students to build and deploy an agentic portfolio chatbot with Next.js on Vercel; taught local LLM development with LM Studio.
+Recorded 24 lectures and guided cohorts through LLM fundamentals, prompt engineering, Vercel AI SDK agents, and deploying an agentic portfolio on Vercel---planning curriculum milestones and student deliverables.
 
 \vspace{4pt}
 
