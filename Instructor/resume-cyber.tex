@@ -49,9 +49,9 @@ Cybersecurity professional and technical educator passionate about mentoring the
 \section{Technical Skills}
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.75in} X@{}}
   Security Domains &
-  Penetration Testing, Incident Response, OWASP Top 10, OSINT, Digital Forensics, Network Security, Vulnerability Assessment \\
+  Penetration Testing, Incident Response, Reconnaissance \& Footprinting, Network Traffic Analysis, Network Security, Web Application Security, OWASP Top 10, OSINT, Digital Forensics, Vulnerability Assessment, Threat Modeling \\
   Offensive \& Defensive Tools &
-  Kali Linux, Metasploit Framework, Nmap, Burp Suite, SQLmap, WPScan, Hashcat, Wireshark, Ghidra, Autopsy, Maltego, Nessus, Network Miner, DVWA, pfSense, WAF, VirtualBox, Netcat \\
+  Kali Linux, Parrot OS, Metasploit Framework, Nmap, Burp Suite, SQLmap, WPScan, Wireshark, Hashcat, Ghidra, Autopsy, Maltego, Nessus, Network Miner, DVWA, pfSense, WAF, VirtualBox, Netcat \\
   Languages &
   C++, Python, Bash, SQL, JavaScript \\
   Instruction \& Leadership &
@@ -63,9 +63,17 @@ Cybersecurity professional and technical educator passionate about mentoring the
 
 \resumeSubheading{Hack The Box}{Apr 2025 -- Present}{Meetup Host \& Ambassador}{Lahore, Pakistan}
 \resumeItemList
-  \item Hosted on-campus and online cybersecurity meetups at NIIT, FAST Lahore, UMT Lahore, Superior University, ShellShift, and virtual sessions, teaching security fundamentals through workshops and hands-on labs.
+  \item Hosted on-campus and online cybersecurity meetups at NIIT, UCP, FAST Lahore, UMT Lahore, Superior University, ShellShift, and virtual sessions, teaching security fundamentals through workshops and hands-on labs.
   \item Mentor aspiring professionals on career paths, certifications, and practical skill development; provide HTB resources and curated learning support.
   \item Expand community outreach as Lahore Ambassador (Jan 2026--Present), fostering collaborative peer learning environments.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\resumeSubheading{Spacebar Training}{May 2026 -- Present}{Cyber Security Trainer}{Lahore, Pakistan}
+\resumeItemList
+  \item Compiled a 12-module cybersecurity curriculum outline spanning beginner to expert levels, designed for UK students.
+  \item Wrote voice-over scripts for cyber security lectures and recorded lecture videos with practical demonstrations for the UK-targeted course.
 \resumeItemListEnd
 
 \vspace{4pt}
@@ -107,13 +115,53 @@ Cybersecurity professional and technical educator passionate about mentoring the
 % ---------- Projects ----------
 \section{Relevant Projects}
 
+\textbf{Nessus Vulnerability Assessment Lab} \hfill \textit{Security Assessment} \\
+\textit{Tech Stack:} Nessus, pfSense, Kali Linux, Windows 10, VirtualBox
+\resumeItemList
+  \item Built an isolated assessment lab with pfSense, a Windows 10 VM exposing FTP, RPC, SSH, Telnet, RDP, and MySQL services, and Kali Linux; documented network topology and performed host/service reconnaissance.
+  \item Configured Nessus and executed vulnerability scans; identified SSL/TLS issues (medium-strength ciphers, self-signed/untrusted certificates, deprecated TLS 1.0/1.1), SMB signing not required, and SSH Terrapin weakness (CVE-2023-48795).
+  \item Assessed impact per finding, triaged false positives vs.\ confirmed vulnerabilities, and documented remediation recommendations with scan proof for validation.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{ModSecurity WAF Lab} \hfill \textit{Web Application Security} \\
+\textit{Tech Stack:} DVWA, Apache, ModSecurity, mod\_security2
+\resumeItemList
+  \item Deployed DVWA and successfully exploited command injection to establish a vulnerable baseline before defensive controls were applied.
+  \item Enabled Apache \texttt{mod\_security2}, configured ModSecurity with rules cloned from GitHub, and integrated them in \texttt{apache2.conf}.
+  \item Retested the same command injection payload after WAF deployment; ModSecurity blocked the attack and returned HTTP 403 Forbidden.
+\resumeItemListEnd
+
+\vspace{4pt}
+
+\textbf{LOKI Scanner --- Malware Detection Lab} \hfill \textit{Threat Detection} \\
+\textit{Tech Stack:} Apache, LOKI, YARA, Python, Kali Linux
+\resumeItemList
+  \item Set up an Apache server with a file upload page, uploaded a web shell, and validated remote shell access to simulate a compromised host environment.
+  \item Installed YARA, cloned LOKI from GitHub, configured the Python environment, and ran LOKI against the Apache working directory.
+  \item Used LOKI to scan for malicious files and validate detection of the planted web shell in the target directory.
+\resumeItemListEnd
+
+\vspace{4pt}
+
 \textbf{CTF Platform} \hfill \textit{Web Application} \\
-Web platform for hosting and managing Capture The Flag cybersecurity competitions; organized CTF events at PFTP and led Cyber Siege team competitions.
+\textit{Tech Stack:} Django, Docker, Bootstrap, Jinja2
+\resumeItemList
+  \item Built a Django web platform with an admin panel to add, edit, and remove CTF tasks---supporting both static-file and Docker-based challenges---with secure login and team creation.
+  \item Implemented score calculation based on task marks and per-team task completion, with free and paid hint options for progressive challenge support.
+  \item Delivered the participant frontend with Bootstrap and Jinja2; used to host CTF competitions at PFTP and lead Cyber Siege team events.
+\resumeItemListEnd
 
 \vspace{4pt}
 
 \textbf{File Sync System} \hfill \textit{C++ Application} \\
-C++ file synchronization utility for reliable local file management and structured data transfer.
+\textit{Tech Stack:} C++, WinSock, AVL Tree, Multithreading
+\resumeItemList
+  \item Built separate C++ client and server applications on Windows using WinSock, implementing the server network stack from scratch for remote file management.
+  \item Used multithreading so the main server process keeps accepting connections while each client request is handled on its own thread.
+  \item Loaded millions of files into heap memory and indexed them with an in-memory AVL tree for fast search, list, create, delete, and modify operations.
+\resumeItemListEnd
 
 \vspace{4pt}
 
